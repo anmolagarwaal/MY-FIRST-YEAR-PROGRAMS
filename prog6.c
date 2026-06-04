@@ -1,21 +1,17 @@
 #include <stdio.h>
 int main()
 {
-    int a;
-    printf("enter any positive integer ");
-    scanf("%d",&a);
-    if(a%3==0 || a%5==0)
+  // prime or not
+
+  printf("enter the number you want to check if its prime or not ");
+    int n;
+    scanf("%d",&n);
+
+    for(int i=1; i<n-1; i++ )
     {
-        if(a%15 !=0)
+        if(n%i==0 )
         {
-            printf("number is divisible by 3 or 5 but not by 15 ");
+
         }
-        else{
-        printf("the number is divisible by 15 ");
     }
-    }
-    else{
-        printf("the number is not divisible by 5 and 3");
-    }
-    return 0;
 }

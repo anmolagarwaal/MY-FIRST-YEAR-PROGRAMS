@@ -1,19 +1,17 @@
+
 #include <stdio.h>
 int main()
+{
+    //even numbers
 
-{ int n;
-printf("enter the year you want to check if its a leap year or not ");
-scanf("%d",&n);
-if(n%4==0 && n%100 !=0)
-{
- printf("the year is a leap year");
-}
-else if (n%4==0 && n%100==0 && n%400==0)
-{
-    printf("the year is a leap year");
-}
-else{
-    printf("the year is not a leap year");
-}
-return 0;
+    printf("enter the number till when you want to print the even number ");
+    int n;
+    scanf("%d",&n);
+    for(int i = 1 ; i <= n ; i++)
+    {
+        if (i%2==0)
+        {
+            printf("\n %d",i);
+        }
+    }
 }

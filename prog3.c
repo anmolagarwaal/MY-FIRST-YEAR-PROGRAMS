@@ -1,17 +1,14 @@
 #include <stdio.h>
 int main()
+{ printf("enter the number you want a table of till 10 ");
+    int n,k;
+    scanf("%d",&n);
+
+for(int i = 1 ; i <=10 ; i++)
 {
-printf("enter the value you want to get the absolute value of ");
-int n,k;
-scanf("%d",&n);
-if(n>=0)
-{
-    printf("the absolute value is %d",n);
-}
-else 
-{
-    k = n*-1;
-    printf("the absolute value is %d",k);
+  k=n*i;
+  printf("\n%d",k);
 }
 return 0;
+
 }

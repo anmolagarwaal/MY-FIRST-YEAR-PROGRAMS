@@ -1,27 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int sp, cp ,a,b;
-    printf("enter the cost price of the product ");
-    scanf("%d",&cp);
-    printf("enter the selling price of the product ");
-    scanf("%d",&sp); 
-
-    if(sp>cp)
+    //ap 4 7 10 13 ... up to n terms
+printf("enter a number ");
+    // nth term = a+(n-1)d
+    //here (3n+1)
+int n;
+scanf("%d",&n);
+    for(int i = 4 ; i <= 3*n+1 ; i=i+3)
     {
-        a=sp-cp;
-        printf("seller has made a profit");
-        printf("\nprofit of %d",a);
+        printf("%d\n",i);
     }
-    else if(cp>sp)
-    {
-        b=cp-sp;
-        printf("seller has made a loss");
-        printf("\nloss of %d",b);
-    }
-    else
-    {
-        printf("no profit no loss");
-    }
-        return 0;
-        }
+}

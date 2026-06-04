@@ -1,20 +1,19 @@
 #include <stdio.h>
 int main()
-    {
- // to count the digts of a number 
+{
+ // reverse of a number
+
  printf("enter a number ");
  int n;
   scanf("%d",&n);
-  
-  int i=0;
+  int i = 0;
+  int ld;
+
   while(n!=0)
   {
+    ld = n%10;
+    printf("%d",ld);
     n=n/10;
-    
-    i++;
-
   }
-  printf("%d",i);
-
   return 0;
 }

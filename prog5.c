@@ -1,27 +1,14 @@
- #include <stdio.h>
- int main()
- {
-    int a,b,c;
-    printf("enter first number");
-    scanf("%d",&a);
-    printf("\nenter second number");
-    scanf("%d",&b);
-    printf("\nenter third number");
-    scanf("%d",&c);
+#include <stdio.h>
+int main()
+{
+    // decreasing ap
+    printf("enter the number ");
+    int n;
+    scanf("%d",&n);
 
-    if(a > b && a > c)
+    for(int i = n ; i>=0 ; i--)
     {
-   printf("the greatest is  %d",a);
-    }
-    
-   else if(b > a && b > c)
-    {
-   printf("the greatest is  %d",b);
-    }
-    
-    else if(c > b && c > a)
-    {
-   printf("the greatest is  %d",c);
-    }
-    return 0;
- }
+        printf("%d\n",i);
+ 
+    }return 0;
+}

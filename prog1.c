@@ -1,18 +1,11 @@
 #include <stdio.h>
 int main()
 {
+    printf("enter the total numbers you want to print ");
     int n;
-    printf("enter a number you want to check if its even or odd ");
     scanf("%d",&n);
-    if(n%2==0)
-    {
-        printf("the number is even");
-
-    }
-    else
-    {
-        printf("the number is odd");
-    }
-
-    return 0;
+for(int i = 0 ; i<=n; i++)
+{
+    printf("\n%d",i);
+}
 }
